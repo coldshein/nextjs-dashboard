@@ -5,10 +5,13 @@ import RevenueChart from '../../ui/dashboard/revenue-chart';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard'
+}
 
 const DashboardPage = async () => {
-
-
 
   return (
     <main>
